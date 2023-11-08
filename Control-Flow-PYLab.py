@@ -4,8 +4,8 @@
 # 1. Prompts the user to enter a letter in the alphabet:
 #      Please enter a letter from the alphabet (a-z or A-Z): 
 
-# alphabet = input("Enter a leter 'a-z': ").lower()
-# # print("You entered: ", alphabet)
+alphabet = input("Enter a leter 'a-z': ").lower()
+print("You entered: ", alphabet)
 
 # 2. Write the code that determines whether the letter entered is a vowel
 
@@ -17,10 +17,10 @@
 #         For example, if some_char in 'abc':
 
 
-# if alphabet == "a" or alphabet == "e" or alphabet== "i" or alphabet == "o" or alphabet == "u":
-#     print(f"The letter {alphabet} is a vowel")
-# else:
-#     print(f"The letter {alphabet} is a consonant")
+if alphabet == "a" or alphabet == "e" or alphabet== "i" or alphabet == "o" or alphabet == "u":
+    print(f"The letter {alphabet} is a vowel")
+else:
+    print(f"The letter {alphabet} is a consonant")
 
 
 # exercise-02 Length of Phrase
@@ -32,11 +32,11 @@
 #      - What you entered is xx characters long
 # 3. Return to step 1, unless the word 'quit' was entered.
 
-# while True:
-#   word = input("Please enter a word or phrase: : ")
-#   print(f"What you entered is {len(word)} characters long")
-#   if word == "quit": 
-#     break
+while True:
+  word = input("Please enter a word or phrase: : ")
+  print(f"What you entered is {len(word)} characters long")
+  if word == "quit": 
+    break
   
 
 # exercise-03 Calculate Dog Years
@@ -54,11 +54,11 @@
 # Use the int() function to convert the string returned from input() into an integer
 # Start with an if that checks if the age is less than 3
 
-# dog_age = int(input("Input a dog's age: "))
-# if dog_age < 3:
-#     print(f"The dog's age in dog years is {dog_age * 10}")
-# else:
-#     print(f"The dog's age in dog years is {dog_age * 7}")
+dog_age = int(input("Input a dog's age: "))
+if dog_age < 3:
+    print(f"The dog's age in dog years is {dog_age * 10}")
+else:
+    print(f"The dog's age in dog years is {dog_age * 7}")
 
 
 # exercise-04 What kind of Triangle?
@@ -76,16 +76,16 @@
 # 3. Print a message such as:
 #      - A triangle with sides of <a>, <b> & <c> is a <type of triangle> triangle
 
-# while True:
-#   a = int(input("Enter the length of side a: "))
-#   b = int(input("Enter the length of side b: "))
-#   c = int(input("Enter the length of side c: "))
-#   if a == b == c:
-#     print(f"A triangle with sides of {a}, {b} & {c} is an equilateral triangle")
-#   elif a != b != c:
-#     print(f"A triangle with sides of {a}, {b} & {c} is a scalene triangle")
-#   elif a == b or a == c or b == c:
-#     print(f"A triangle with sides of {a}, {b} & {c} is an isosceles triangle")
+while True:
+  a = int(input("Enter the length of side a: "))
+  b = int(input("Enter the length of side b: "))
+  c = int(input("Enter the length of side c: "))
+  if a == b == c:
+    print(f"A triangle with sides of {a}, {b} & {c} is an equilateral triangle")
+  elif a != b != c:
+    print(f"A triangle with sides of {a}, {b} & {c} is a scalene triangle")
+  elif a == b or a == c or b == c:
+    print(f"A triangle with sides of {a}, {b} & {c} is an isosceles triangle")
   
 
 # exercise-05 Fibonacci sequence for first 50 terms
@@ -106,10 +106,10 @@
 # Use a while loop with a looping variable, or look into Python ranges, e.g.:
 #   for n in range(50):
 
-# term, num = 0, 1
-# for term in range(50):
-#   print(f"term: {term} / number: {num}")
-#   term, num = num, term + num 
+term, num = 0, 1
+for term in range(50):
+  print(f"term: {term} / number: {num}")
+  term, num = num, term + num 
 
 
 
